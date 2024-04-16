@@ -40,8 +40,8 @@ const Contact = () => {
                 {submitSuccess ? (
                     <p className="text-green-600 mb-4">Message sent successfully!</p>
                 ) : (
-                    <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
-                        <div className="mb-6">
+                    <form onSubmit={handleSubmit} className="max-w-lg mx-auto flex flex-col items-center">
+                        <div className="mb-6 w-full">
                             <input
                                 type="text"
                                 name="name"
@@ -52,7 +52,7 @@ const Contact = () => {
                                 required
                             />
                         </div>
-                        <div className="mb-6">
+                        <div className="mb-6 w-full">
                             <input
                                 type="email"
                                 name="email"
@@ -63,7 +63,7 @@ const Contact = () => {
                                 required
                             />
                         </div>
-                        <div className="mb-6">
+                        <div className="mb-6 w-full">
                             <textarea
                                 name="message"
                                 value={formData.message}
