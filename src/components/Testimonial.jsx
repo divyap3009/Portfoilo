@@ -24,14 +24,9 @@ const Testimonial = () => {
                 >
                     Testimonials
                 </motion.h2>
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="relative max-w-xl mx-auto">
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8 }} className="max-w-xl mx-auto">
                     {testimonialData.map((testimonial, index) => (
-                        <motion.div
-                            key={index}
-                            className={`absolute left-0 top-0 w-full h-full transition-opacity ${
-                                index === activeIndex ? 'opacity-100' : 'opacity-0'
-                            }`}
-                        >
+                        <motion.div key={index} className={`text-center mb-8 ${index === activeIndex ? 'opacity-100' : 'opacity-0 hidden sm:block'}`}>
                             <p className="text-lg sm:text-xl text-gray-800 mb-4">{testimonial.quote}</p>
                             <p className="text-gray-600">{testimonial.author}</p>
                         </motion.div>
