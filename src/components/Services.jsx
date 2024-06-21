@@ -12,10 +12,10 @@ const Services = () => {
             title: 'UI/UX Design',
             description: 'Creating intuitive and user-friendly interfaces for optimal user experience.',
         },
-        {
-            title: 'Mobile App Development',
-            description: 'Building cross-platform mobile applications using React Native.',
-        },
+        // {
+        //     title: 'Mobile App Development',
+        //     description: 'Building cross-platform mobile applications using React Native.',
+        // },
     ];
 
     return (
