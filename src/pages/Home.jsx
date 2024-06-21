@@ -66,7 +66,7 @@ function Home() {
             <Projects />
             <Services />
             <Timeline />
-            <Testimonial />
+{/*             <Testimonial /> */}
             <Contact />
         </>
     );
